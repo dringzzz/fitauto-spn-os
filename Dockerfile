@@ -15,5 +15,5 @@ RUN aptitude -y --without-recommends \
 	python-six python-html5lib python-docutils python-django-haystack python-geopy python-pandas uwsgi uwsgi-plugin-python git mysql-client python-crypto python-m2crypto
 
 # Install any needed packages specified in requirements.txt
-RUN pip install ConcurrentLogHandler pyfcm elasticstack django_jenkins xmlrunner django_redis django-redis-cache django-cors-headers Django==1.7.11
+RUN pip install ConcurrentLogHandler pyfcm elasticstack python-redis-lock django_jenkins xmlrunner django_redis django-redis-cache django-cors-headers==2.2.0 Django==1.7.11
 
